@@ -11,6 +11,7 @@ int main(void)
 	int zn;
 	int comma = 44;
 	int space = 32;
+	int newline = 10;
 
 	for (zn = 48; zn <= 57; zn++)
 	{
@@ -22,7 +23,7 @@ int main(void)
 		}
 		else if (zn == 57)
 		{
-			putchar(space);
+			putchar(newline);
 		}
 	}
 
