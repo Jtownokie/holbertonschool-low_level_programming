@@ -11,15 +11,20 @@ int main(void)
 	int zn;
 	int comma = 44;
 	int space = 32;
-	int nine = 57;
 
-	for (zn = 48; zn <= 56; zn++)
+	for (zn = 48; zn <= 57; zn++)
 	{
 		putchar(zn);
-		putchar(comma);
-		putchar(space);
+		if (zn < 57)
+		{
+			putchar(comma);
+			putchar(space);
+		}
+		else if (zn == 57)
+		{
+			putchar(space);
+		}
 	}
-	putchar(nine);
 
 	return (0);
 }
