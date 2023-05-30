@@ -1,5 +1,5 @@
-#ifndef HEADER_NAME_H
-#define HEADER_NAME_H
+#ifndef main.h
+#define main.h
 
 /* _putchar prototype */
 int _putchar(char c);
