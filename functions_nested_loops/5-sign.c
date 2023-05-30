@@ -9,35 +9,24 @@
 int print_sign(int n)
 {
 	int usernum;
+	int val;
 
 	usernum = n;
 
 	if (usernum > 0)
 	{
 		_putchar('+');
-		return (1);
+		val = 1;
 	}
 	else if (usernum == 0)
 	{
 		_putchar('0');
-		return (0);
+		val = 0;
 	}
 	else if (usernum < 0)
 	{
 		_putchar('-');
-		return (-1);
+		val = -1;
 	}
-
-	if (usernum > 0)
-	{
-		return (1);
-	}
-	else if (usernum == 0)
-	{
-		return (0);
-	}
-	else if (usernum < 0)
-	{
-		return (-1);
-	}
+	return (val);
 }
