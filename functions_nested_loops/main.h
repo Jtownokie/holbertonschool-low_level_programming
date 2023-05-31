@@ -27,3 +27,6 @@ int print_last_digit(int);
 
 /* Every Minute function */
 void jack_bauer(void);
+
+/* Add Function */
+int add(int, int);
