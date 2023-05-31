@@ -30,3 +30,6 @@ void jack_bauer(void);
 
 /* Add Function */
 int add(int, int);
+
+/* Print to 98 Function */
+void print_to_98(int n);
