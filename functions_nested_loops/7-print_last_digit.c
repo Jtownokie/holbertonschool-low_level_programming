@@ -13,7 +13,7 @@ int print_last_digit(int x)
 
 	num = x;
 	lastdigit = num % 10;
-	_putchar('lastdigit');
+	_putchar(lastdigit);
 
 	return (lastdigit);
 }
