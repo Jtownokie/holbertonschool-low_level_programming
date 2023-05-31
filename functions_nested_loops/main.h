@@ -33,3 +33,6 @@ int add(int, int);
 
 /* Print to 98 Function */
 void print_to_98(int n);
+
+/* Times Table Function */
+void times_table(void);
