@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _isupper - Checks if input is uppercase
  * @c: Input Integer
@@ -7,6 +9,8 @@
 int _isupper(int c)
 {
 	int letter;
+
+	letter = c;
 
 	if (isupper(letter))
 	{
