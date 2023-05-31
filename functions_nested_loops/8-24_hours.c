@@ -7,12 +7,12 @@
  */
 void jack_bauer(void)
 {
-	int i;
-	int j;
+	int i = 0;
+	int j = 0;
 	int k;
 	int l;
 
-	while !(i == 2 && j == 3)
+	while (!(i == 2 && j == 3))
 	{
 		for (i = 0; i < 3; i++)
 		{
