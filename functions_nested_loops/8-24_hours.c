@@ -12,9 +12,9 @@ void jack_bauer(void)
 	int k;
 	int l;
 
-	for (i = 0; i < 3; i++)
+	while !(i == 2 && j == 3)
 	{
-		while (i < 3)
+		for (i = 0; i < 3; i++)
 		{
 			for (j = 0; j < 10; j++)
 			{
