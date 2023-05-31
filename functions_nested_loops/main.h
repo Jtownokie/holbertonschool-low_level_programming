@@ -21,3 +21,6 @@ int print_sign(int n);
 
 /* Absolute Value function */
 int _abs(int);
+
+/* Last Digit function */
+int print_last_digit(int);
