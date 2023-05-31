@@ -18,22 +18,18 @@ void print_to_98(int n)
 	{
 		for (i = num; i <= 98; i++)
 		{
-			_putchar(i);
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", i);
 		}
 	}
 	else if (num == 98)
 	{
-		_putchar(num);
+		printf("%d\n", num);
 	}
 	else if (num > 98)
 	{
 		for (j = num; j >= 98; j--)
 		{
-			_putchar(j);
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", j);
 		}
 	}
 }
