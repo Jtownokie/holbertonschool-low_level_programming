@@ -6,7 +6,7 @@
  *
  * Return: Always 0
  */
-int _abs(int x);
+int _abs(int x)
 {
 	int num;
 	int reval;
