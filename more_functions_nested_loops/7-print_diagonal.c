@@ -12,6 +12,8 @@ void print_diagonal(int n)
 	int i;
 	int j;
 
+	len = n
+
 	if (len <= 0)
 	{
 		_putchar('\n');
