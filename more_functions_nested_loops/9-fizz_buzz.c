@@ -21,7 +21,10 @@ int main(void)
 			{
 				printf("Buzz");
 			}
-			printf("Buzz ");
+			else
+			{
+				printf("Buzz ");
+			}
 		}
 		else if ((i % 3) == 0 && (i % 5) == 0)
 		{
