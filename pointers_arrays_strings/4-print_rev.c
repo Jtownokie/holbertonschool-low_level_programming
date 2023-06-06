@@ -6,11 +6,21 @@
  *
  * Return: Always void
  */
-void print_rev(char *str)
+void print_rev(char *s)
 {
-	for (*str = '\0';str > -1; str--)
+	int i;
+	int length = _strlen(*s);
+	int tmp;
+
+	for (i = 0; i < length / 2; i ++)
 	{
-		_putchar(*str);
+		tmp = s[i];
+		s[i] = s[length - i - 1];
+		s[length - i - 1] = tmp;
 	}
-	_putchar('\n');
+	while (*s != '\0')
+	{
+		_putchar(*s);
+		s++;
+	}
 }
