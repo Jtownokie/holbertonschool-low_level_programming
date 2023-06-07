@@ -15,7 +15,7 @@ void print_rev(char *s)
 	while (*s != '\0')
 	{
 		length = length + 1;
-		*s = *s + 1;
+		s = s + 1;
 	}
 
 	for (i = 0; i < length / 2; i++)
@@ -28,6 +28,6 @@ void print_rev(char *s)
 	while (*s != '\0')
 	{
 		_putchar(*s);
-		*s = *s + 1;
+		s = s + 1;
 	}
 }
