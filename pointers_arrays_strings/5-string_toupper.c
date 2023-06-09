@@ -18,6 +18,7 @@ char *string_toupper(char *str)
 	while (*str)
 	{
 		len++;
+		str++;
 	}
 
 	len = len - 1;
