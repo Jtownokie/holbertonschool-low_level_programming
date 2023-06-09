@@ -48,7 +48,7 @@ char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
 
 /* Strcmp Function */
-char _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2);
 
 /* Reverse Array Function */
 void reverse_array(int *a, int n);
