@@ -11,14 +11,12 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
+	char *start = dest;
+
 	if ((dest == NULL) && (src == NULL))
 	{
 		return (NULL);
 	}
-
-	char *start;
-
-	start = dest;
 
 	while (*src && n--)
 	{
