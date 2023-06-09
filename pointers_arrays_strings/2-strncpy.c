@@ -9,9 +9,9 @@
  * Return: Pointer to New String
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, size_t n)
 {
-	int i;
+	size_t i;
 	char *temp = dest;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
