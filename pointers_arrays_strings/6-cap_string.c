@@ -25,7 +25,7 @@ char *cap_string(char *str)
 
 	for (j = 0; j < len; j++)
 	{
-		if (_isalpha.c(str[j]) == 0 && str[j] != '-' && _isdigit.c(str[j]) == 0)
+		if (_isalpha(str[j]) == 0 && str[j] != '-' && _isdigit(str[j]) == 0)
 		{
 			if (str[j + 1] >= 'a' && str[j + 1] <= 'z')
 			{
