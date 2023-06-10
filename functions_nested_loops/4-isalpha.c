@@ -12,7 +12,7 @@ int _isalpha(int c)
 
 	letter = c;
 
-	if (isalpha(letter))
+	if ((letter >= 65 && letter <= 90) || (letter >= 97 && letter <= 122))
 	{
 		return (1);
 	}
