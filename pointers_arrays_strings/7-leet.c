@@ -14,12 +14,16 @@ char *leet(char *s)
 	char n[6] = { '4', '3', '0', '7', '1' };
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		if (s[i] == a[i] || s[i] == a[i] - 32)
+		for (i = 0; i < 5; i++)
 		{
-			s[i] = n[i];
+			if (*s == a[i] || *s == a[i] - 32)
+			{
+				*s = n[i];
+			}
 		}
+		s++;
 	}
 
 	return (r);
