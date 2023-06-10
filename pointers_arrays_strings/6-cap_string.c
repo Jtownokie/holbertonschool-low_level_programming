@@ -25,6 +25,10 @@ char *cap_string(char *str)
 
 	for (j = 0; j < len; j++)
 	{
+		if (str[0] >= 'a' && str[0] <= 'z')
+		{
+			str[0] = str[0] - 'a' + 'A';
+		}
 		if (_isalpha(str[j]) == 0 && str[j] != '-' && _isdigit(str[j]) == 0)
 		{
 			if (str[j + 1] >= 'a' && str[j + 1] <= 'z')
