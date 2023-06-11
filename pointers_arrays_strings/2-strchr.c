@@ -15,6 +15,7 @@ char *_strchr(char *s, char c)
 	do {
 		if (*s == c)
 		{
+			temp = s;
 			return (temp);
 		}
 	} while (*s++);
