@@ -10,21 +10,14 @@
 
 char *_strchr(char *s, char c)
 {
-	char **temp = &s;
+	char temp = s;
 
-	while (*s)
-	{
-		if (*s == c)
+	do {
+		if (*str == c)
 		{
-			temp = &s;
-			break;
+			return (temp);
 		}
-		else
-		{
-			*temp = NULL;
-		}
-		s++;
-	}
+	} while (*str++);
 
-	return (*temp);
+	return (NULL);
 }
