@@ -11,11 +11,11 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len = 0;
-	bool noaccept = false;
+	int noaccept = 0;
 
 	while (*s)
 	{
-		if (noaccept == false)
+		if (noaccept == 0)
 		{
 			while (*accept)
 			{
@@ -29,10 +29,14 @@ unsigned int _strspn(char *s, char *accept)
 					accept++;
 					if (*accept == '\0')
 					{
-						noaccept = true;
+						noaccept = 1;
 					}
 				}
 			}
+		}
+		else
+		{
+			break;
 		}
 		s++
 	}
