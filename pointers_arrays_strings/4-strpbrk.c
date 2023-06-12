@@ -21,8 +21,8 @@ char *_strpbrk(char *s, char *accept)
 	{
 		if (_strchr(accept, *s))
 		{
-			temp = s;
-			return (s);
+			temp = s; 
+			return (temp);
 		}
 		else
 		{
