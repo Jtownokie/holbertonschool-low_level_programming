@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strchr.c"
 
 /**
  * _strspn - Counts number of chars in str s that match chars in str accept
@@ -11,35 +12,16 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len = 0;
-	int noaccept = 0;
 
-	while (*s)
+	if ((s == NULL) || (s2 == NULL))
 	{
-		if (noaccept == 0)
-		{
-			accept[0] = accept[0];
-			while (*accept)
-			{
-				if (*s == *accept)
-				{
-					len++;
-					break;
-				}
-				else
-				{
-					accept++;
-					if (*accept == '\0')
-					{
-						noaccept = 1;
-					}
-				}
-			}
-		}
-		else
-		{
-			break;
-		}
-		s++;
+		return (len);
 	}
+
+	while (*s && _strchr(accept, *s++))
+	{
+		len++;
+	}
+
 	return (len);
 }
