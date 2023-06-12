@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strchr.c"
 
 /**
  * *_strpbrk - Returns a pointer to the first occurrence in a string
