@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len = 0;
 
-	if ((s == NULL) || (s2 == NULL))
+	if ((s == NULL) || (accept == NULL))
 	{
 		return (len);
 	}
