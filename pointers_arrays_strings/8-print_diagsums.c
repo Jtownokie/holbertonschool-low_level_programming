@@ -11,11 +11,14 @@
 void print_diagsums(int *a, int size)
 {
 	int i, sum1, sum2;
+	int **array;
+
+	array = &a;
 
 	for (i = 0; i < size; i++)
 	{
-		sum1 = sum1 + (*a)[i][i];
-		sum2 = sum2 + (*a)[i][size - i - 1];
+		sum1 = sum1 + a[i][i];
+		sum2 = sum2 + a[i][size - i - 1];
 	}
 
 	printf("%d, %d\n", sum1, sum2);
