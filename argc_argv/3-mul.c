@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * main - Program that prints all arguments passed to it
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 		result = 1;
 		for (i = 1; i < argc; i++)
 		{
-			result *= _atoi(argv[i]);
+			result *= atoi(argv[i]);
 		}
 		printf("%d\n", result);
 	}
