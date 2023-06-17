@@ -14,7 +14,7 @@ int find_sqrt(int num, int root)
 	{
 		return (-1);
 	}
-	else if ((root * root) == number)
+	else if ((root * root) == num)
 	{
 		return (root);
 	}
