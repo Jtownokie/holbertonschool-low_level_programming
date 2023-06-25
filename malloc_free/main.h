@@ -8,6 +8,9 @@
 /* Putchar Function */
 int _putchar(char c);
 
+/* Strlen Function */
+int _strlen(char *s);
+
 /* Create Array Function */
 char *create_array(unsigned int size, char c);
 
