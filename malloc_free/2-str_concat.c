@@ -29,18 +29,18 @@ char *str_concat(char *s1, char *s2)
 	i = 0;
 	while (*s1 != '\0')
 	{
-		*new_string[i] = *s1;
+		new_string[i] = *s1;
 		s1++;
 		i++;
 	}
 
 	while (*s2 != '\0')
 	{
-		*new_string[i] = *s2;
+		new_string[i] = *s2;
 		s2++;
 		i++;
 	}
-	*new_string[i] = '\0';
+	new_string[i] = '\0';
 
 	return (new_string);
 }
