@@ -16,12 +16,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		*s1 = "";
+		s1 = "";
 	}
 
 	if (s2 == NULL)
 	{
-		*s2 = "";
+		s2 = "";
 	}
 
 	new_string = malloc(((_strlen(s1) + _strlen(s2)) + 1) * sizeof(char));
