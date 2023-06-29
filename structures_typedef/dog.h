@@ -5,9 +5,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-/* Putchar Function */
-int _putchar(char c);
-
 /**
  * struct dog - New type "dog", with name, age, and owner
  * @name: Name of Dog
@@ -23,5 +20,11 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/* Putchar Function */
+int _putchar(char c);
+
+/* Init_Dog Function */
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
