@@ -30,4 +30,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 /* Print_Dog Function */
 void print_dog(struct dog *d);
 
+/* New_Dog Function */
+dog_t *new_dog(char *name, float age, char *owner);
+
 #endif
