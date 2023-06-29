@@ -14,12 +14,12 @@
  * Description: Struct named "dog" that includes the name, age, and owner
  */
 
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 
 /* Putchar Function */
 int _putchar(char c);
