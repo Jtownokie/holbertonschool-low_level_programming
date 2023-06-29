@@ -27,4 +27,7 @@ int _putchar(char c);
 /* Init_Dog Function */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
+/* Print_Dog Function */
+void print_dog(struct dog *d);
+
 #endif
