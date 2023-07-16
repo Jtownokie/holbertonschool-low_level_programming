@@ -9,12 +9,22 @@
 
 void print_binary(unsigned long int n)
 {
-	int i;
+	unsigned long int printbit = 1ul << 63;
+	char c = '0';
 
-	for (i = sizeof(unsigned long int) * 7; i >= 0; i--)
+	while (!(printbit & n) && printbit != 0)
+		printbit = printbit >> 1;
+
+	if (printbit == 0)
+		_putchar(c);
+
+	while (printbit)
 	{
-		_putchar(((n & (1 << i)) >> i) + '0');
+		if (printbit & n)
+			c = '1';
+		else
+			c = '0';
+		_putchar(c);
+		printbit = printbit >> 1;
 	}
-
-	_putchar('\n');
 }
