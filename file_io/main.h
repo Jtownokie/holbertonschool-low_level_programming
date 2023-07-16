@@ -5,7 +5,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdarg.h>
-#include <fcnt1.h>
 
 /* Putchar Function */
 int _putchar(char c);
