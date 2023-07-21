@@ -1,10 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * hash_djb2 - Implementation of the djb2 hash function
- * @str: String to pass
+ * key_index - Function that returns index of *key
+ * @key: key to pass
+ * @size: size of table
  *
- * Return: ul int that can be used as index
+ * Return: index of key
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
