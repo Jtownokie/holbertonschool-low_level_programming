@@ -1,17 +1,29 @@
 #include "hash_tables.h"
 
 /**
- * key_index - Function that returns index of *key
- * @key: key to pass
- * @size: size of table
+ * hash_table_delete - Function that deletes a hash table
+ * @ht: Table to delete
  *
- * Return: index of key
+ * Return: Always Void
  */
 
-unsigned long int key_index(const unsigned char *key, unsigned long int size)
+void hash_table_delete(hash_table_t *ht)
 {
+	hash_node_t *current, *next;
 	unsigned long int index;
 
-	index = hash_djb2(key);
-	return (index % size);
+	if(!ht)
+		return;
+	for (index = 0; index < ht->size; index++)
+	{
+		for (current = ht->array[index]; current; current = next)
+		{
+			next = current->next;
+			free(current->key);
+			free(current->value);
+			free(current);
+		}
+	}
+	free(ht->array);
+	free(ht);
 }
